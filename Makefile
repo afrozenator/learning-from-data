@@ -1,8 +1,8 @@
 CC=g++
 CFLAGS=-std=c++0x -I.
 
-testing_main.out: testing_main.cc random_points.o line.o perceptron_learning_algorithm.o
-	$(CC) random_points.o line.o perceptron_learning_algorithm.o testing_main.cc -o testing_main.out $(CFLAGS)
+problem_set_1.out: problem_set_1.cc random_points.o line.o perceptron_learning_algorithm.o
+	$(CC) random_points.o line.o perceptron_learning_algorithm.o problem_set_1.cc -o problem_set_1.out $(CFLAGS)
 
 perceptron_learning_algorithm.o: perceptron_learning_algorithm.cc perceptron_learning_algorithm.h line.o random_points.o
 	$(CC) -c perceptron_learning_algorithm.cc $(CFLAGS)
